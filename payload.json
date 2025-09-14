@@ -1,0 +1,18 @@
+{
+  "cards": [
+    {
+      "title": "Card Example 1",
+      "imageUrl": "https://adaptivecards.io/content/cats/1.png",
+      "date":  "2023-10-01T12:00:00Z",
+      "summary": "This is an example of a card with an image.",
+      "url": "https://www.boxuk.com"
+    },
+    {
+      "title": "Card Example 2",
+      "imageUrl": "https://adaptivecards.io/content/cats/2.png",
+      "date":  "2024-10-01T12:00:00Z",
+      "summary": "Just another card example with an image.",
+      "url": "https://www.boxuk.com"
+    }
+  ]
+}

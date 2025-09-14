@@ -1,0 +1,42 @@
+{
+  "name": "PHP 8.3 + Node.js 22 + Symfony + React",
+  "image": "mcr.microsoft.com/devcontainers/php:1-8.3-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    },
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-json",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "ms-vscode.vscode-eslint"
+      ],
+      "settings": {
+        "php.suggest.basic": false,
+        "php.validate.executablePath": "/usr/local/bin/php",
+        "intelephense.files.maxSize": 5000000
+      }
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "forwardPorts": [8000, 3000, 5173],
+  "portsAttributes": {
+    "8000": {
+      "label": "Symfony Dev Server"
+    },
+    "3000": {
+      "label": "React Dev Server"
+    },
+    "5173": {
+      "label": "Vite Dev Server"
+    }
+  }
+}
